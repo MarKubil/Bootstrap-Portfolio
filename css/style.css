@@ -1,16 +1,73 @@
-body {
-    padding: 0;
-    margin: 0;
+:root {
+  --breakpoint-sm: 320px !important; 
 }
-
+/* Navigation bar */
+.customNav {
+  position: fixed !important;
+  width: 100%;
+  background: url("../images/transparency.png");
+  background-color: transparent !important;
+  background-size: cover;
+  z-index: 10;
+}
 .navbar-nav {
     flex-direction: row !important;
     justify-content: end;
 }
 .nav-item {
-    margin-left: 30px;
+    margin: 0 30px;
 }
 
-.customNav {
-    color: black !important;
+.navbar-logo img {
+    padding-right: 15px;
+    width: 65px;
+    border-radius: 50%;
+  }
+
+  .navbar-logo {
+    margin-left: 50px;
+    font-size: 30px;
+    text-decoration: none !important;
+  }
+
+  .customNav a {
+    color: white !important;
+  }
+/* Jumbotron */
+#hero {
+  background: rgb(60, 1, 68);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 500px;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0;
+  
+}
+.jumboCopy {
+  width: 70%;
+  max-width: 1200px;
+  color: white;
+  text-align: center;
+    font-weight: bold;
+}
+/* Hero section content */
+#hero-image img {
+  width: 300px;
+  border-radius: 20%;
+  border: 3px solid var(--dark)
+}
+#about li {
+  text-align: left;
+  list-style: none;
+
+}
+
+/* Work section */
+#work {
+  background-color: yellow;
+  height: 500px;
 }

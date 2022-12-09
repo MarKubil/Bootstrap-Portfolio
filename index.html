@@ -8,8 +8,7 @@
     <link rel="icon" href="./images/logo.webp" type="image/x-type">
 
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">    <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <!-- Stylesheets -->
     <link rel="stylesheet" href="./css/style.css" />
@@ -20,27 +19,62 @@
 </head>
 
 <body>
-    <nav class="customNav navbar navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">Portfolio</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+    <header>
+            <nav class="customNav navbar navbar-expand-lg navbar-dark">
+                <a class="navbar-logo">Portfolio</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Dropdown</a> 
-                </li>
-            </ul>
-        </div>
-    </nav>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Dropdown</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+</header>
+    <main>
+
+        <!-- Hero section / Jumbotron -->
+        <section id="hero" class="jumbotron">
+            <div class="jumboCopy row container-fluid"> 
+                <div id="hero-image" class="col-12 col-sm-12 col-lg-4">
+                    <img src="./images/Layer 1.png">
+                </div>
+                <div id="about" class="col-12 col-sm-12 col-lg-8">
+                    
+                    <h3>Hi, I'm Marius Kubilius</h3>
+                    <ul>
+                        <li>I enjoy analyzing and solving complex issues. I am also highly creative and like looking for new ways to
+                          solve problems. I am project oriented and task driven. I take direction very well and enjoy working alone or
+                          with a team.</li>
+                        <li>I am a good communicator and more importantly, listener. I will work with you to be sure we have a clear
+                          understanding of a project and the associated deadlines.</li>
+                        <li>I understand tight timelines and I use my skills to deliver fast results and hopefully, relieve your
+                          stressful situation.</li>
+                        <li>I love my work because it is always new and gives me the opportunity to improve my skills and learn new
+                          ones
+                          as well.</li>
+                      </ul>
+                </div>
+        </section>
+        <section id="work" class="container-fluid">
+            <div class="row">
+                
+            </div>
+        </section>
+    </main>
+
     <!-- Boostrap JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
