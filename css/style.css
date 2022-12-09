@@ -1,5 +1,6 @@
 :root {
-  --breakpoint-sm: 320px !important; 
+  --background1: rgb(60, 1, 68);
+  --background2: yellow;
 }
 /* Navigation bar */
 .customNav {
@@ -35,7 +36,7 @@
   }
 /* Jumbotron */
 #hero {
-  background: rgb(60, 1, 68);
+  background: var(--background1);
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
@@ -67,7 +68,36 @@
 }
 
 /* Work section */
+
+
 #work {
-  background-color: yellow;
-  height: 500px;
+  background-color: var(--background2);
+  height: 100%;
+  padding: 50px 0;
+}
+
+#work a {
+  text-decoration: none;
+  color: var(--dark);
+}
+
+.card img {
+  height: 300px;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* Skills section */
+
+#skills {
+  background-color: var(--background1);
+  padding: 50px 0;
+  color: white;
+}
+
+/* About me section */
+
+#contact {
+  background-color: var(--background2);
+  padding: 50px 0;
 }
