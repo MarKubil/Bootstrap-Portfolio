@@ -16,7 +16,8 @@
     <!-- Bootstraps 4.6 -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
         integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-
+    <!-- FontAwesome -->
+    <script src="https://kit.fontawesome.com/dae7787a08.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -31,13 +32,16 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Home</a>
+                        <a class="nav-link" href="#">About me</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
+                        <a class="nav-link" href="#work">Works</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Dropdown</a>
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contacts</a>
                     </li>
                 </ul>
             </div>
@@ -55,21 +59,10 @@
 
                     <h3>Hi, I'm Marius Kubilius</h3>
                     <ul>
-                        <li>I enjoy analyzing and solving complex issues. I am also highly creative and like looking for
-                            new ways to
-                            solve problems. I am project oriented and task driven. I take direction very well and enjoy
-                            working alone or
-                            with a team.</li>
-                        <li>I am a good communicator and more importantly, listener. I will work with you to be sure we
-                            have a clear
-                            understanding of a project and the associated deadlines.</li>
-                        <li>I understand tight timelines and I use my skills to deliver fast results and hopefully,
-                            relieve your
-                            stressful situation.</li>
-                        <li>I love my work because it is always new and gives me the opportunity to improve my skills
-                            and learn new
-                            ones
-                            as well.</li>
+                        <li>Front-end developer</li>
+                        <li>JavaScript</li>
+                        <li>HTML</li>
+                        <li>CSS</li>
                     </ul>
                 </div>
         </section>
@@ -141,10 +134,39 @@
                     <div class="col">
                         <h3>In this bootcamp I'm expecting to aquere skills:</h3>
                         <ul>
-                            <li>learn</li>
-                            <li>learn</li>
-                            <li>learn</li>
-                            <li>learn</li>
+                            <li>JavaScript
+                                <ul>
+                                    <li>Variables</li>
+                                    <li>Control Flow</li>
+                                    <li>Error handling</li>
+                                    <li>Data Models</li>
+                                    <li>Asynchronity</li>
+                                    <li>DOM Manipulation</li>
+                                    <li>Node.js / Express</li>
+                                    <li>Frontend Framework</li>
+                                </ul>
+                            </li>
+                            <li>CSS
+                                <ul>
+                                    <li>Basic concepts: selectors, combinators, styling rules.</li>
+                                    <li>Specificity and Inheritance.</li>
+                                    <li>Box Model, Box Sizing, Background, and Image Styling.</li>
+                                    <li>Element positioning.</li>
+                                    <li>Units and dimensions.</li>
+                                    <li>Responsive design for any screen size view.</li>
+                                    <li>Form Styling.</li>
+                                    <li>Typography.</li>
+                                </ul>
+                            </li>
+                            <li>HTML
+                                <ul>
+                                    <li>Web page structure</li>
+                                    <li>Html elements</li>
+                                    <li>Semantic elements</li>
+                                    <li>Tables</li>
+                                </ul>
+                            </li>
+                         
                         </ul>
                     </div>
                 </div>
@@ -153,49 +175,56 @@
         <section id="contact">
             <div class="container">
                 <div class="row">
-                    <div id="about-me" class="col-lg-10">
+                    <div id="about-me" class="col-11">
                         <ul>
-                            <li>I enjoy analyzing and solving complex issues. I am also highly creative and like looking for
+                            <li>I enjoy analyzing and solving complex issues. I am also highly creative and like looking
+                                for
                                 new ways to
-                                solve problems. I am project oriented and task driven. I take direction very well and enjoy
+                                solve problems. I am project oriented and task driven. I take direction very well and
+                                enjoy
                                 working alone or
                                 with a team.</li>
-                            <li>I am a good communicator and more importantly, listener. I will work with you to be sure we
+                            <li>I am a good communicator and more importantly, listener. I will work with you to be sure
+                                we
                                 have a clear
                                 understanding of a project and the associated deadlines.</li>
                             <li>I understand tight timelines and I use my skills to deliver fast results and hopefully,
                                 relieve your
                                 stressful situation.</li>
-                            <li>I love my work because it is always new and gives me the opportunity to improve my skills
+                            <li>I love my work because it is always new and gives me the opportunity to improve my
+                                skills
                                 and learn new
                                 ones
                                 as well.</li>
                         </ul>
                     </div>
-                    <div class="col-lg-2">
-                        <a href="https://twitter.com/kubilius_marius" target="_blank">Twitter</a>
-          <a href="https://www.linkedin.com/in/marius-kubilius-071245190/" target="_blank">LinkedIn</a>
-          <a href="https://github.com/MarKubil" target="_blank">GitHub</a>
+                    <div id="links" class="col-1">
+                        <a href="https://twitter.com/kubilius_marius" target="_blank"><i class="fa-brands fa-twitter" alt="Twitter"></i></a>
+                        <a href="https://www.linkedin.com/in/marius-kubilius-071245190/" target="_blank"><i class="fa-brands fa-linkedin" alt="LinkedIn"></i></a>
+                        <a href="https://github.com/MarKubil" target="_blank"><i class="fa-brands fa-github" alt="GitHub"></i></a>
                     </div>
                 </div>
             </div>
         </section>
-     </main>
-     <footer>
+    </main>
+    <footer>
         <div class="container">
-            
+            <div class="row">
+                <label>Your email for subscribe:</label>
+                <input placeholder="Subscribe" type="email">
+            </div>
         </div>
-     </footer>
-            <!-- Boostrap JavaScript -->
-            <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
-                integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-                crossorigin="anonymous"></script>
-            <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-                integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-                crossorigin="anonymous"></script>
-            <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
-                integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
-                crossorigin="anonymous"></script>
+    </footer>
+    <!-- Boostrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+        integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
