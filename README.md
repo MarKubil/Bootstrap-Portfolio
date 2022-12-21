@@ -16,7 +16,7 @@ N/A
 ## Usage
 My portfolio shows my skills and the jobs witch I have been working on.
 
-Link to live page: [Click here](https://github.com/MarKubil/Bootstrap-Portfolio)
+Link to live page: [Click here](https://markubil.github.io/Bootstrap-Portfolio/)
 
 
 ## Credits
