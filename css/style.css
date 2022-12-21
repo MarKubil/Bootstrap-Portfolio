@@ -2,9 +2,11 @@
   --background1: repeating-linear-gradient(-45deg, black, black 5px, rgb(60, 1, 68) 5px, rgb(60, 1, 68) 10px);
   --background2: repeating-linear-gradient(-45deg, yellow, yellow 5px, white 5px, white 10px);
 }
+
 body {
   width: 100%;
 }
+
 /* Navigation bar */
 #logo {
   width: 50px;
@@ -22,65 +24,65 @@ body {
   background-size: cover;
   z-index: 10;
 }
+
 .navbar-nav {
-    flex-direction: row !important;
-    justify-content: end;
+  flex-direction: row !important;
+  justify-content: end;
 }
+
 .nav-item {
-    margin: 0 30px;
+  margin: 0 30px;
 }
 
 .navbar-logo img {
-    padding-right: 15px;
-    width: 65px;
-    border-radius: 50%;
-  }
+  padding-right: 15px;
+  width: 65px;
+  border-radius: 50%;
+}
 
-  .navbar-logo {
-    margin-left: 50px;
-    font-size: 30px;
-    text-decoration: none !important;
-  }
+.navbar-logo {
+  margin-left: 50px;
+  font-size: 30px;
+  text-decoration: none !important;
+}
 
-  .customNav a {
-    color: white !important;
-  }
+.customNav a {
+  color: white !important;
+}
+
 /* Jumbotron */
 #hero {
   background: var(--background1);
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
-  height: 500px;
   height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 0;
-  
+
 }
+
 .jumboCopy {
   width: 70%;
   max-width: 1200px;
   color: white;
   text-align: center;
-    font-weight: bold;
+  font-weight: bold;
 }
+
 /* Hero section content */
 #hero-image img {
   width: 300px;
   border-radius: 20%;
   border: 3px solid var(--dark)
 }
-#about li {
-  list-style: none;
-  font-size: 1.5em;
-}
+
 /* JS cubes */
 #js-img {
-position: relative;
-left: 150px;
-display: blcok;
+  position: relative;
+  left: 150px;
 }
 
 .cube {
@@ -119,6 +121,7 @@ display: blcok;
   box-shadow: -90px 80px 20px rgb(50 50 50/ 15%);
   animation: animate 7s ease-in-out infinite;
 }
+
 #html:before {
   background-color: rgb(147, 69, 40);
 }
@@ -144,6 +147,7 @@ display: blcok;
 #css:after {
   background-color: rgb(100, 100, 229);
 }
+
 #javascript {
   left: 100px;
   bottom: 65px;
@@ -163,17 +167,18 @@ display: blcok;
 }
 
 @keyframes animate {
+
   0%,
   100% {
     transform: scale(0.2) rotate(-25deg) skew(25deg);
   }
+
   50% {
     transform: scale(1.2) rotate(10deg) skew(25deg);
   }
 }
+
 /* Work section */
-
-
 #work {
   background: var(--background2);
   height: 100%;
@@ -205,23 +210,49 @@ display: blcok;
   background: var(--background2);
   padding: 50px 0;
 }
-
+#contact li {
+  list-style: none;
+}
 /* Contact me section */
-
 #links {
   font-size: 50px;
 }
 
 /* Footer */
-
 footer {
   height: 100%;
   background: var(--background1);
   padding: 10px;
 }
+
+#copyrights p {
+  color: white;
+  position: absolute;
+  bottom: 0;
+}
+
+#copyrights a {
+  font-size: 1.5em;
+  color: white;
+  display: flex;
+  text-decoration: none;
+}
+
+#copyrights a:hover {
+  color: red;
+}
+
+/* Form button */
 #button {
   width: 100%;
 }
+
+#button:hover {
+  box-shadow: 5px 10px black;
+
+}
+
+/* media tu turn off hero moving img on small screen */
 @media only screen and (max-width: 768px) {
   #js-img {
     display: none;

@@ -38,7 +38,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">About me</a>
+                        <a class="nav-link" href="#">Main</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#work">Works</a>
@@ -178,6 +178,7 @@
             <div class="container">
                 <div class="row">
                     <div id="about-me" class="col-11">
+                        <h3>About me:</h3>
                         <ul>
                             <li>I enjoy analyzing and solving complex issues. I am also highly creative and like looking
                                 for
@@ -215,10 +216,14 @@
     <footer>
         <div class="container">
             <div class="row">
-                <div class="col-4">
-                    <p>© Omar Ahmad 2022. All Rights Reserved.</p>
+                <div id="copyrights" class="col-6">
+                    <a href="https://google.co.uk">Google</a>
+                    <a href="https://en.wikipedia.org/">Wikipedia</a>
+                    <a href="https://courses.bootcampspot.com/">BootCamp</a>
+                    <p>© Marius Kubilius 2022. All Rights Reserved.</p>
                 </div>
-                <div class="col-4">
+                <div class="col-6">
+                    <!-- Email form but unfortinatly didn't make it work :( -->
                     <form action="mail.php" method="POST">
                         <div class="row">
                             <div class="col-6">
@@ -250,20 +255,8 @@
                         </div>
                     </form>
                     <div class="text-center text-md-left">
-                        <a id="button" class="btn btn-primary" type="submit" name="submit" value="Submit">Send</a>
+                        <button id="button" class="btn btn-primary" type="submit" name="submit" value="Submit">Send</button>
                     </div>
-                </div>
-                <div class="col-4">
-                    <form method="post" name="myemailform" action="form.php">
-
-                        Enter Name: <input type="text" name="name">
-
-                        Enter Email Address: <input type="text" name="email">
-
-                        Enter Message: <textarea name="message"></textarea>
-
-                        <input type="submit" value="Send Form">
-                    </form>
                 </div>
             </div>
         </div>
