@@ -1,8 +1,19 @@
 :root {
-  --background1: rgb(60, 1, 68);
-  --background2: yellow;
+  --background1: repeating-linear-gradient(-45deg, black, black 5px, rgb(60, 1, 68) 5px, rgb(60, 1, 68) 10px);
+  --background2: repeating-linear-gradient(-45deg, yellow, yellow 5px, white 5px, white 10px);
+}
+body {
+  width: 100%;
 }
 /* Navigation bar */
+#logo {
+  width: 50px;
+}
+
+#logo-text {
+  font-family: 'Nerko One', cursive;
+}
+
 .customNav {
   position: fixed !important;
   width: 100%;
@@ -65,12 +76,106 @@
   list-style: none;
   font-size: 1.5em;
 }
+/* JS cubes */
+#js-img {
+position: relative;
+left: 150px;
+display: blcok;
+}
 
+.cube {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  transform: rotate(-25deg) skew(25deg);
+}
+
+.cube::before {
+  position: absolute;
+  content: "";
+  width: 21px;
+  height: 100%;
+  transform: skewY(-45deg);
+  left: -20px;
+  bottom: -10px;
+}
+
+.cube::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 21px;
+  transform: skewX(-45deg);
+  left: -10px;
+  bottom: -20px;
+}
+
+#html {
+  left: -100px;
+  bottom: 120px;
+  background-image: url("../images/html-square.png");
+  background-size: cover;
+  background-color: rgb(246, 157, 125);
+  box-shadow: -90px 80px 20px rgb(50 50 50/ 15%);
+  animation: animate 7s ease-in-out infinite;
+}
+#html:before {
+  background-color: rgb(147, 69, 40);
+}
+
+#html:after {
+  background-color: rgb(246, 157, 125);
+}
+
+#css {
+  left: 40px;
+  bottom: 240px;
+  background-image: url("../images/css-square.png");
+  background-size: cover;
+  background-color: rgb(71, 71, 231);
+  box-shadow: -100px 80px 20px rgb(50 50 50/ 15%);
+  animation: animate 5.5s ease-in-out infinite;
+}
+
+#css:before {
+  background-color: rgb(52, 52, 122);
+}
+
+#css:after {
+  background-color: rgb(100, 100, 229);
+}
+#javascript {
+  left: 100px;
+  bottom: 65px;
+  background-image: url("../images/javascript-square.png");
+  background-size: cover;
+  background-color: #f6cd45;
+  box-shadow: -60px 60px 20px rgb(50 50 50/ 15%);
+  animation: animate 6s ease-in-out infinite;
+}
+
+#javascript:before {
+  background-color: #b49633;
+}
+
+#javascript:after {
+  background-color: #f7e199;
+}
+
+@keyframes animate {
+  0%,
+  100% {
+    transform: scale(0.2) rotate(-25deg) skew(25deg);
+  }
+  50% {
+    transform: scale(1.2) rotate(10deg) skew(25deg);
+  }
+}
 /* Work section */
 
 
 #work {
-  background-color: var(--background2);
+  background: var(--background2);
   height: 100%;
   padding: 50px 0;
 }
@@ -89,7 +194,7 @@
 /* Skills section */
 
 #skills {
-  background-color: var(--background1);
+  background: var(--background1);
   padding: 50px 0;
   color: white;
 }
@@ -97,7 +202,7 @@
 /* About me section */
 
 #contact {
-  background-color: var(--background2);
+  background: var(--background2);
   padding: 50px 0;
 }
 
@@ -110,6 +215,15 @@
 /* Footer */
 
 footer {
-  height: 150px;
-  background-color: var(--background1);
+  height: 100%;
+  background: var(--background1);
+  padding: 10px;
+}
+#button {
+  width: 100%;
+}
+@media only screen and (max-width: 768px) {
+  #js-img {
+    display: none;
+  }
 }

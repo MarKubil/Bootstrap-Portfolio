@@ -6,6 +6,11 @@
     <title>Marius Kubilius // Web Developer</title>
     <!-- Title logo -->
     <link rel="icon" href="./images/logo.webp" type="image/x-type">
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet">
+
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -23,7 +28,8 @@
 <body>
     <header>
         <nav class="customNav navbar navbar-expand-lg navbar-dark">
-            <a class="navbar-logo">Portfolio</a>
+            <img id="logo" src="./images/logo.web.png">
+            <a id="logo-text" class="navbar-logo">Portfolio</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -52,18 +58,14 @@
         <!-- Hero section / Jumbotron -->
         <section id="hero" class="jumbotron">
             <div class="jumboCopy row container-fluid">
-                <div id="hero-image" class="col-12 col-sm-12 col-lg-4">
+                <div id="hero-image" class="col-sm-12 col-md-6 col-lg-6">
+                    <h3>Marius Kubilius</h3>
                     <img src="./images/Layer 1.png">
                 </div>
-                <div id="about" class="col-12 col-sm-12 col-lg-8">
-
-                    <h3>Hi, I'm Marius Kubilius</h3>
-                    <ul>
-                        <li>Front-end developer</li>
-                        <li>JavaScript</li>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                    </ul>
+                <div id="js-img" class="col-sm-12 col-md-6 col-lg-6">
+                    <div class="cube" id="javascript"></div>
+                    <div class="cube" id="html"></div>
+                    <div class="cube" id="css"></div>
                 </div>
         </section>
         <!-- Work section -->
@@ -166,7 +168,7 @@
                                     <li>Tables</li>
                                 </ul>
                             </li>
-                         
+
                         </ul>
                     </div>
                 </div>
@@ -199,9 +201,12 @@
                         </ul>
                     </div>
                     <div id="links" class="col-1">
-                        <a href="https://twitter.com/kubilius_marius" target="_blank"><i class="fa-brands fa-twitter" alt="Twitter"></i></a>
-                        <a href="https://www.linkedin.com/in/marius-kubilius-071245190/" target="_blank"><i class="fa-brands fa-linkedin" alt="LinkedIn"></i></a>
-                        <a href="https://github.com/MarKubil" target="_blank"><i class="fa-brands fa-github" alt="GitHub"></i></a>
+                        <a href="https://twitter.com/kubilius_marius" target="_blank"><i class="fa-brands fa-twitter"
+                                alt="Twitter"></i></a>
+                        <a href="https://www.linkedin.com/in/marius-kubilius-071245190/" target="_blank"><i
+                                class="fa-brands fa-linkedin" alt="LinkedIn"></i></a>
+                        <a href="https://github.com/MarKubil" target="_blank"><i class="fa-brands fa-github"
+                                alt="GitHub"></i></a>
                     </div>
                 </div>
             </div>
@@ -210,11 +215,63 @@
     <footer>
         <div class="container">
             <div class="row">
-                <label>Your email for subscribe:</label>
-                <input placeholder="Subscribe" type="email">
+                <div class="col-4">
+                    <p>© Omar Ahmad 2022. All Rights Reserved.</p>
+                </div>
+                <div class="col-4">
+                    <form action="mail.php" method="POST">
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="md-form mb-0">
+                                    <input placeholder="Your name" type="text" name="name" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="md-form mb-0">
+                                    <input placeholder="Your email" type="text" name="email" class="form-control">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="md-form mb-0">
+                                    <input placeholder="Subject" type="text" name="subject" class="form-control">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="md-form">
+                                    <textarea type="text" placeholder="Your message" name="message" rows="2"
+                                        class="form-control md-textarea"></textarea>
+                                </div>
+
+                            </div>
+                        </div>
+                    </form>
+                    <div class="text-center text-md-left">
+                        <a id="button" class="btn btn-primary" type="submit" name="submit" value="Submit">Send</a>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <form method="POST" action="form.php" id="contact-form">
+                        <form method="post" name="myemailform" action="form-to-email.php">
+
+                            Enter Name:	<input type="text" name="name">
+                            
+                            Enter Email Address:	<input type="text" name="email">
+                            
+                            Enter Message:	<textarea name="message"></textarea>
+                            
+                            <input type="submit" value="Send Form">
+                            </form>                </div>
             </div>
         </div>
     </footer>
+
+    <!-- JS -->
+   
+
     <!-- Boostrap JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
