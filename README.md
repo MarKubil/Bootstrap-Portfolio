@@ -2,7 +2,7 @@
 
 
 ## Description
-This is my portfolio where I present my projects and my skills.
+This is my portfolio where I present my projects and skills.
 
 I have used HTML and CSS and bootstrap in this project. It meets all accessibility standards and adapts to the viewers screen.
 
